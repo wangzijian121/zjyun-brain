@@ -1,2 +1,2 @@
 # zjyun-brain
-zjyun-命令速记工具
+zjyun-Command shorthand instrument
