@@ -7,6 +7,7 @@ public class Brain {
     private String name;
     private String RecallCount;
     private Date createTime;
+    private Date useEnvironment;
 
 
     public Brain(String name, String recallCount, Date createTime) {
