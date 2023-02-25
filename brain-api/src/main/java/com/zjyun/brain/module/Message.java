@@ -1,29 +1,56 @@
 package com.zjyun.brain.module;
 
+import java.awt.*;
 import java.util.Date;
 
 public class Message {
 
-    private String label;
+    private Integer id;
+    private String user_id;
+    private Integer brain_id;
+    private Integer label_id;
     private String content;
-
-    private String createUser;
-
     private Date createTime;
 
-    public Message(String label, String content, String createUser, Date createTime) {
-        this.label = label;
+    public Message(Integer id, String user_id, Integer brain_id, Integer label_id, String content, Date createTime) {
+        this.id = id;
+        this.user_id = user_id;
+        this.brain_id = brain_id;
+        this.label_id = label_id;
         this.content = content;
-        this.createUser = createUser;
         this.createTime = createTime;
     }
 
-    public String getLabel() {
-        return label;
+    public Integer getId() {
+        return id;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+    public Integer getBrain_id() {
+        return brain_id;
+    }
+
+    public void setBrain_id(Integer brain_id) {
+        this.brain_id = brain_id;
+    }
+
+    public Integer getLabel_id() {
+        return label_id;
+    }
+
+    public void setLabel_id(Integer label_id) {
+        this.label_id = label_id;
     }
 
     public String getContent() {
@@ -32,14 +59,6 @@ public class Message {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getCreateUser() {
-        return createUser;
-    }
-
-    public void setCreateUser(String createUser) {
-        this.createUser = createUser;
     }
 
     public Date getCreateTime() {

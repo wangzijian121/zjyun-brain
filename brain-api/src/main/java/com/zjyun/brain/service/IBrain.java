@@ -4,11 +4,28 @@ import com.zjyun.brain.module.Message;
 
 public interface IBrain {
 
-    String  recall();
+    /**
+     * Recall  message
+     *
+     * @param keywords keywords
+     * @return
+     */
+    String recall(String keywords);
 
-    String remember(Message message);
+    /**
+     * Memory message
+     *
+     * @param message
+     * @return
+     */
+    void remember(Message message);
 
-    String  getBrainInfo();
+    /**
+     * Brain info
+     *
+     * @return
+     */
+    String getBrainInfo();
 
 
 }

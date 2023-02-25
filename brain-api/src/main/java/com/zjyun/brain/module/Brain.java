@@ -1,42 +1,71 @@
 package com.zjyun.brain.module;
 
+import java.beans.JavaBean;
 import java.util.Date;
+import java.util.List;
 
+/**
+ * Brain Class
+ *
+ * @author zjjian Wang
+ * @date 2023年2月25日
+ */
 public class Brain {
 
-    private String name;
-    private String RecallCount;
-    private Date createTime;
-    private Date useEnvironment;
+    private Integer id;
+    private Integer useId;
 
+    List<Label> labelList;
 
-    public Brain(String name, String recallCount, Date createTime) {
-        this.name = name;
-        RecallCount = recallCount;
-        this.createTime = createTime;
+    private Integer recallCount;
+
+    private Integer rememberTotal;
+
+    public Brain(Integer id, Integer useId, List<Label> labelList, Integer recallCount, Integer rememberTotal) {
+        this.id = id;
+        this.useId = useId;
+        this.labelList = labelList;
+        this.recallCount = recallCount;
+        this.rememberTotal = rememberTotal;
     }
 
-    public String getName() {
-        return name;
+    public Integer getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getRecallCount() {
-        return RecallCount;
+    public Integer getUseId() {
+        return useId;
     }
 
-    public void setRecallCount(String recallCount) {
-        RecallCount = recallCount;
+    public void setUseId(Integer useId) {
+        this.useId = useId;
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    public List<Label> getLabelList() {
+        return labelList;
     }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+    public void setLabelList(List<Label> labelList) {
+        this.labelList = labelList;
+    }
+
+    public Integer getRecallCount() {
+        return recallCount;
+    }
+
+    public void setRecallCount(Integer recallCount) {
+        this.recallCount = recallCount;
+    }
+
+    public Integer getRememberTotal() {
+        return rememberTotal;
+    }
+
+    public void setRememberTotal(Integer rememberTotal) {
+        this.rememberTotal = rememberTotal;
     }
 }
