@@ -1,0 +1,12 @@
+swagger:
+  enable: true
+server:
+  port: 8080
+spring:
+  application:
+    name: zjyun-brain
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/zjyun_brain?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&tinyInt1isBit=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -4,7 +4,11 @@ import java.util.Date;
 
 public class Auth {
 
+    /**
+     * id
+     */
     private Integer id;
+
     private String  userId;
     private String  token;
     private Integer numberOfConnection;

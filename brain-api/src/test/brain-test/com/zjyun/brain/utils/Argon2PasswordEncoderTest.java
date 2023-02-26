@@ -14,9 +14,10 @@ public class Argon2PasswordEncoderTest {
 
     @Test
     public void matches_successful() {
-        String password = "12345678";
+        String password = "1219116968abcde";
         String encryptionPassword = Argon2PasswordEncoder.encode(password);
-        Assert.assertEquals(true, Argon2PasswordEncoder.matches(encryptionPassword, "12345678"));
+        System.out.println(encryptionPassword);
+        Assert.assertEquals(true, Argon2PasswordEncoder.matches(encryptionPassword, "1219116968abcde"));
     }
 
     public void matches_failed() {
